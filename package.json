@@ -17,7 +17,7 @@
     "scripts": {
         "prepare": "husky install",
         "preinstall": "npx only-allow pnpm",
-        "preversion": "pnpm i && pnpm lint && pnpm build && git add -A",
+        "preversion": "pnpm i && pnpm lint && git add -A",
         "postversion": "git push && pnpm publish",
         "lint:prettier": "prettier --write --loglevel warn \"lib/**/*.js\"",
         "lint:eslint": "eslint \"lib/**/*.js\"",
