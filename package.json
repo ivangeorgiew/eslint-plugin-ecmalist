@@ -1,0 +1,91 @@
+{
+    "name": "eslint-plugin-ecmalist",
+    "version": "1.0.0",
+    "description": "Combination of eslint, ecmascript and browserslist",
+    "private": false,
+    "main": "lib/index.js",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "require": "./lib/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "prepare": "husky install",
+        "preinstall": "npx only-allow pnpm",
+        "preversion": "pnpm i && pnpm lint && pnpm build && git add -A",
+        "postversion": "git push && pnpm publish",
+        "lint:prettier": "prettier --write --loglevel warn \"lib/**/*.js\"",
+        "lint:eslint": "eslint \"lib/**/*.js\"",
+        "lint": "pnpm lint:prettier && pnpm lint:eslint"
+    },
+    "prettier": {
+        "printWidth": 85,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": false,
+        "singleQuote": true,
+        "quoteProps": "as-needed",
+        "jsxSingleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid",
+        "htmlWhitespaceSensitivity": "css",
+        "proseWrap": "always",
+        "endOfLine": "lf"
+    },
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 2021
+        },
+        "env": {
+            "es2021": true,
+            "node": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "prettier",
+            "plugin:ecmalist/recommended"
+        ],
+        "settings": {
+            "es": {
+                "aggressive": true
+            }
+        }
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "keywords": [
+        "browser",
+        "browserslist",
+        "caniuse",
+        "ecma",
+        "ecmascript",
+        "eslint",
+        "eslint-plugin",
+        "eslint-plugin-compat",
+        "eslint-plugin-es"
+    ],
+    "author": "Ivan Georgiev <ivan_georgiew@yahoo.com>",
+    "license": "MIT",
+    "repository": "github:ivangeorgiew/eslint-plugin-ecmalist",
+    "bugs": "https://github.com/ivangeorgiew/eslint-plugin-ecmalist/issues",
+    "homepage": "https://github.com/ivangeorgiew/eslint-plugin-ecmalist#readme",
+    "dependencies": {
+        "@mdn/browser-compat-data": "^4.0.0",
+        "browserslist": "^4.16.8",
+        "eslint-plugin-es": "github:ivangeorgiew/eslint-plugin-es"
+    },
+    "devDependencies": {
+        "eslint": "^7.30.0",
+        "eslint-config-prettier": "^8.3.0",
+        "husky": "^7.0.0",
+        "prettier": "^2.3.2"
+    }
+}
