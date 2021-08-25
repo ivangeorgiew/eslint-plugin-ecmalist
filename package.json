@@ -23,7 +23,8 @@
         "bigbump": "pnpm version minor",
         "lint:prettier": "prettier --write --loglevel warn \"lib/**/*.{js,json,md}\"",
         "lint:eslint": "eslint \"lib/**/*.js\"",
-        "lint": "pnpm lint:prettier && pnpm lint:eslint"
+        "lint": "pnpm lint:prettier && pnpm lint:eslint",
+        "test": "node ./lib/test.js"
     },
     "prettier": "@ivan_georgiew/prettier-config",
     "eslintConfig": {
