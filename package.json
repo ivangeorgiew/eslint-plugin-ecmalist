@@ -32,6 +32,9 @@
             "plugin:ecmalist/recommended",
             "prettier"
         ],
+        "env": {
+            "node": true
+        },
         "settings": {
             "es": {
                 "aggressive": true
