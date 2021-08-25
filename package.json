@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-ecmalist",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Combination of eslint, ecmascript and browserslist",
     "private": false,
     "main": "lib/index.js",
