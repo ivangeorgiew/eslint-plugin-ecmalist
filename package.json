@@ -59,13 +59,16 @@
     "repository": "github:ivangeorgiew/eslint-plugin-ecmalist",
     "bugs": "https://github.com/ivangeorgiew/eslint-plugin-ecmalist/issues",
     "homepage": "https://github.com/ivangeorgiew/eslint-plugin-ecmalist#readme",
+    "peerDependencies": {
+        "eslint": ">= 7.30.0"
+    },
     "dependencies": {
         "@mdn/browser-compat-data": "^4.0.0",
         "browserslist": "^4.16.8",
         "eslint-plugin-es": "github:ivangeorgiew/eslint-plugin-es"
     },
     "devDependencies": {
-        "@ivan_georgiew/prettier-config": "^1.0.1",
+        "@ivan_georgiew/prettier-config": "^1.0.2",
         "eslint": "^7.30.0",
         "eslint-config-prettier": "^8.3.0",
         "husky": "^7.0.0",
