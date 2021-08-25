@@ -28,13 +28,7 @@ Your `.eslintrc.*` file:
 
 ```json
 {
-    "parserOptions": {
-        "ecmaVersion": 2021
-    },
-    "env": {
-        "es2021": true
-    },
-    "extends": ["eslint:recommended", "plugin:ecmalist/recommended"]
+    "extends": ["plugin:ecmalist/recommended"]
 }
 ```
 
@@ -53,11 +47,7 @@ If you are developing for browsers add to the config `eslint-plugin-compat`:
 
 ```json
 {
-    "extends": [
-        "eslint:recommended",
-        "plugin:ecmalist/recommended",
-        "plugin:compat/recommended"
-    ]
+    "extends": ["plugin:ecmalist/recommended", "plugin:compat/recommended"]
 }
 ```
 

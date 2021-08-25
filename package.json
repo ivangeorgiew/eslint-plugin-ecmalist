@@ -21,38 +21,16 @@
         "postversion": "git push && pnpm publish",
         "bump": "pnpm version patch",
         "bigbump": "pnpm version minor",
-        "lint:prettier": "prettier --write --loglevel warn \"lib/**/*.js\"",
+        "lint:prettier": "prettier --write --loglevel warn \"lib/**/*.{js,json,md}\"",
         "lint:eslint": "eslint \"lib/**/*.js\"",
         "lint": "pnpm lint:prettier && pnpm lint:eslint"
     },
-    "prettier": {
-        "printWidth": 85,
-        "tabWidth": 4,
-        "useTabs": false,
-        "semi": false,
-        "singleQuote": true,
-        "quoteProps": "as-needed",
-        "jsxSingleQuote": true,
-        "trailingComma": "none",
-        "bracketSpacing": true,
-        "jsxBracketSameLine": false,
-        "arrowParens": "avoid",
-        "htmlWhitespaceSensitivity": "css",
-        "proseWrap": "always",
-        "endOfLine": "lf"
-    },
+    "prettier": "@ivan_georgiew/prettier-config",
     "eslintConfig": {
-        "parserOptions": {
-            "ecmaVersion": 2021
-        },
-        "env": {
-            "es2021": true,
-            "node": true
-        },
         "extends": [
             "eslint:recommended",
-            "prettier",
-            "plugin:ecmalist/recommended"
+            "plugin:ecmalist/recommended",
+            "prettier"
         ],
         "settings": {
             "es": {
@@ -64,13 +42,12 @@
         "node": ">=12.22.0"
     },
     "keywords": [
-        "browser",
         "browserslist",
         "caniuse",
         "ecma",
         "ecmascript",
         "eslint",
-        "eslint-plugin",
+        "eslintplugin",
         "eslint-plugin-compat",
         "eslint-plugin-es"
     ],
@@ -85,6 +62,7 @@
         "eslint-plugin-es": "github:ivangeorgiew/eslint-plugin-es"
     },
     "devDependencies": {
+        "@ivan_georgiew/prettier-config": "^1.0.1",
         "eslint": "^7.30.0",
         "eslint-config-prettier": "^8.3.0",
         "husky": "^7.0.0",

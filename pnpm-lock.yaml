@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@ivan_georgiew/prettier-config': ^1.0.1
   '@mdn/browser-compat-data': ^4.0.0
   browserslist: ^4.16.8
   eslint: ^7.30.0
@@ -15,6 +16,7 @@ dependencies:
   eslint-plugin-es: github.com/ivangeorgiew/eslint-plugin-es/433b188aae274cc82943d92fcd5088dc18b0d58e_eslint@7.32.0
 
 devDependencies:
+  '@ivan_georgiew/prettier-config': 1.0.1
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   husky: 7.0.1
@@ -72,6 +74,13 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.0:
     resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
+    dev: true
+
+  /@ivan_georgiew/prettier-config/1.0.1:
+    resolution: {integrity: sha512-gYWcu2V7wTrkRhfvIgZA0V30yu7FNb4m+oMNQpJjn94q4Tjz3YcCKDmfngr/5TTNH9Tg/9L5XxLMp0mZsFT/Cg==}
+    requiresBuild: true
+    dependencies:
+      prettier: 2.3.2
     dev: true
 
   /@mdn/browser-compat-data/4.0.0:
