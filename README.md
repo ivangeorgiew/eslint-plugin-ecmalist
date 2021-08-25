@@ -1,7 +1,8 @@
 # eslint-plugin-ecmalist
 
 ESlint plugin meant to replace transpilation (like babel). Adds linting for
-ecmascript and browser features.
+`ecmascript` features allowed from your `browserslist` configuration. If your library
+is for the browser too, use also `eslint-plugin-compat`, as shown below.
 
 ## Installation
 
@@ -79,4 +80,3 @@ This library was made possible by using the following:
 Shoutout also to:
 
 -   [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
--   [doiuse](https://github.com/anandthakker/doiuse)
