@@ -17,14 +17,15 @@
     "scripts": {
         "prepare": "husky install",
         "preinstall": "npx only-allow pnpm",
-        "preversion": "pnpm i && pnpm lint && git add -A",
+        "preversion": "pnpm i && git add -A",
         "postversion": "git push && pnpm publish",
         "bump": "pnpm version patch",
         "bigbump": "pnpm version minor",
-        "lint:prettier": "prettier --write --loglevel warn \"lib/**/*.{js,json,md}\"",
-        "lint:eslint": "eslint \"lib/**/*.js\"",
-        "lint": "pnpm lint:prettier && pnpm lint:eslint",
         "test": "node ./lib/test.js"
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix",
+        "*.{js,json,md}": "prettier --write"
     },
     "prettier": "@ivan_georgiew/prettier-config",
     "eslintConfig": {
@@ -70,9 +71,10 @@
     },
     "devDependencies": {
         "@ivan_georgiew/prettier-config": "^1.0.3",
-        "eslint": "^7.30.0",
+        "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "husky": "^7.0.0",
+        "lint-staged": "^11.1.2",
         "prettier": "^2.3.2"
     }
 }
