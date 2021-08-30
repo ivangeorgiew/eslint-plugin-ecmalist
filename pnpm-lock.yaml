@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@ivan_georgiew/prettier-config': ^1.0.3
+  '@ivan_georgiew/prettier-config': ^1.0.4
   '@mdn/browser-compat-data': ^4.0.0
   browserslist: ^4.16.8
   eslint: ^7.32.0
@@ -17,7 +17,7 @@ dependencies:
   eslint-plugin-es: github.com/ivangeorgiew/eslint-plugin-es/433b188aae274cc82943d92fcd5088dc18b0d58e_eslint@7.32.0
 
 devDependencies:
-  '@ivan_georgiew/prettier-config': 1.0.3_prettier@2.3.2
+  '@ivan_georgiew/prettier-config': 1.0.4_prettier@2.3.2
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   husky: 7.0.1
@@ -78,8 +78,8 @@ packages:
     resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
     dev: true
 
-  /@ivan_georgiew/prettier-config/1.0.3_prettier@2.3.2:
-    resolution: {integrity: sha512-rRZs+Cwr9BGZ2vkxSXom5vjG+hHz9n7MJY67wKIpvk2C1r64Wa7gx4ltmBau0HNBHpXBH9jiP+H9iBovGsByoQ==}
+  /@ivan_georgiew/prettier-config/1.0.4_prettier@2.3.2:
+    resolution: {integrity: sha512-tEIzQmx058rHD2Y/QWGeF02f9HDcoOmSxLb2NUH48DkVnYJvQuO5E8dre1EjPe3jXzz6dpczPQMMx+5Mo8YDUw==}
     requiresBuild: true
     peerDependencies:
       prettier: '>= 2.3.2'
